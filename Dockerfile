@@ -19,6 +19,6 @@ RUN chmod a+x /configure-backup-rotate.sh
 COPY cron-logrotate.sh /etc/periodic/daily/logrotate
 RUN chmod a+x /etc/periodic/daily/logrotate
 
-ENTRYPOINT ["/entrypoint.sh", "/docker-entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh", "/usr/local/bin/docker-entrypoint.sh"]
 
 CMD ["postgres"]
