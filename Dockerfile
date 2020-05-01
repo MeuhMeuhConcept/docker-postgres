@@ -1,4 +1,4 @@
-FROM postgres:10-alpine
+FROM postgres:12-alpine
 
 MAINTAINER jn.germon@gmail.com
 
